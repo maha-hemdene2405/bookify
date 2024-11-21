@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inria Serif';
     background-color: #f8f9fa;
 }
 
@@ -11,14 +11,17 @@ footer {
     width: 100%;
     bottom: 0;
 }
-.nav{
-    background: #f1f2f6;
+.nav-link{
+  font-family: 'Inria Serif';
+  font-size: 22px;
+  border: black;
+  border-radius: 10px;
 }
 
  /* About Section */
  .about-section {
-    padding: 80px 0;
-    background: #aeb8fe;
+    padding: 150px 0;
+    background: #f1f2f6;
     text-align: center;
   }
   .about-section p {
