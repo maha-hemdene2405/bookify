@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation - Application de Réservation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: #789DBC;">
         <div class="container">
-            <a class="navbar-brand" href="index.html">RéservApp</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="C:\Users\hallo\OneDrive\Documents\GitHub\bookify\bookify .png" alt="logo" width="100" height="100">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,6 +29,7 @@
             </div>
         </div>
     </nav>
+<div class="margin">
 
     <!-- Réservation Section -->
     <div class="container py-5">
@@ -33,10 +37,16 @@
         <form>
             <div class="mb-3">
                 <label for="service" class="form-label">Choisir un service</label>
-                <select class="form-select" id="service">
-                    <option value="service1">Service 1</option>
-                    <option value="service2">Service 2</option>
-                    <option value="service3">Service 3</option>
+                <select class="form-select" id="service" >
+                    <option value="les services">les services </option>
+                    <option value="service1">activites et loisirs</option>
+                    <option value="service2">consultation</option>
+                    <option value="service3">Evenement privé</option>
+                    <option value="service4">hotels</option>
+                    <option value="service5">salle de reunion</option>
+                    <option value="service6">services de spa</option>
+                    <option value="service7">Sport et aventures</option>
+                    <option value="service8">Transport privé</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -52,9 +62,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4">
-        <p>&copy; 2024 RéservApp. Tous droits réservés.</p>
-    </footer>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Réservation Service | Tous droits réservés</p>
+    </footer></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
