@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: 'Inria Serif';
+    background-color: #f1f2f6;
+  }
+  
+  
+  
+  footer {
+    background: #0d0d0d;
+    padding: 10px 0;
+    text-align: center;
+    position:relative;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    }
+  
+  
+  .header {
+  height: 400px;
+  background: #789DBC;
+  display: flex;
+  position: relative;
+  justify-content: center; 
+  align-items: center; 
+  }
+
+
+/* Header and Section Titles */
+h2.section-title, h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Accordion Section */
+.accordion-button {
+    background-color: #789DBC;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.accordion-button:hover {
+    background-color: #5f758c;
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-button::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f078"; /* Chevron Down */
+    font-size: 1.5rem;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+
+.accordion-button.collapsed::after {
+    content: "\f054"; /* Chevron Up */
+}
+
+/* Accordion Body */
+.accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Search Box */
+#faqSearch {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#faqSearch:focus {
+    outline: none;
+    border-color: #789DBC;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+/* Submit Question Form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+form button {
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #5f758c;
+}
+
+/* FAQ Video Section */
+iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* General Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    h2.section-title {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
